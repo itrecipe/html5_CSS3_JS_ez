@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>type number와 range control</title>
+</head>
+<body>
+
+<h3>홈 제어 시스템 - 온도 조절(number와 range속성 사용)</h3>
+<hr/>
+<form name="fn" id="fi" action="#" method="post">
+	지속시간(0.0 ~ 10.0시간) : 
+	<input type="number" name="num" min="0.0" max="10.0" step="0.5"/>
+	<!-- number는 숫자를 증감하는 스핀창을 보여줌 step은 증감 간격, 직접입력도 가능 -->
+	<p></p>
+	<!-- &deg;는 도 기포효시 엔터티 -->
+	<!-- 슬라이드바를 사용하느 type="range" -->
+	온도 설정 : 10&deg;
+</form>
+</body>
+</html>
