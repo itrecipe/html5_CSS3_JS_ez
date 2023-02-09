@@ -36,12 +36,8 @@
 	</tbody>
 	<tfoot>
 		<tr>
-			<th>학번</th> 
-			<th>이름</th> 
-		</tr>
-		<tr>
-			<th>생년월일</th> 
-			<th>전화번호</th> 
+			<td colspan="2">학번</td> 
+			<td colspan="2">이름</td> 
 		</tr>
 	</tfoot>
 </table>
@@ -57,14 +53,14 @@
 <!-- 5번 -->
 <form name="fn" id="fid" action="#" method="post">
 <fieldset> <!-- form의 control(구성요소)을 그룹핑 -->
-		<legend>회원정보</legend> <!-- 그룹핑한 control들의 이름 -->
+		<legend>로그인</legend> <!-- 그룹핑한 control들의 이름 -->
+		<label>
 		이메일 : <input type="email" name="email" placeholder="xxx@naver.com" required><br/>
-		<button>제출</button>
-		
-		비밀번호 : <input type="password" name="password" placeholder="ex) asdf1234!@#$" required><br/>
-		<!-- button의 기본(default) type은 submit, 
-		(여기서는 기본타입이 submit이므로 따로 작성하지 않았다.) -->
-		<input type="reset" name=""/>
+		</label>
+		<label for="password">비밀번호 : </label>
+		<input type="password" name="password" id="password" placeholder="ex) asdf1234!@#$" required><br/>
+		<button>제출</button>	
+		<input type="reset" value="취소"/>
 </form>
 </fieldset>
 
