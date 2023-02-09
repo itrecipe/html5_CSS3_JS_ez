@@ -1,2 +1,2 @@
 # html5_ez_exam
-html5 수업 실습 예제
+html5 + CSS 수업 실습 예제
