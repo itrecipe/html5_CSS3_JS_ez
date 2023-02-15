@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>css quiz</title>
+
+<!-- 3 -->
+<style>
+table {
+	border: 1px solid blue;
+	border-collapse: collapse;
+	width: 30%
+}
+td,th {
+	border: 1px dotted green;
+	width: 100px;
+	height: 20px;
+	padding: 10px;
+	text-align: left;
+}
+tbody tr:nth-child(even) {
+	background: aliceblue;
+}
+tbody tr:nth-child(odd) {
+	background: pink;
+}
+
+</style>
+</head>
+<body>
+
+<h3>1.메뉴바 만들기</h3>
+<hr/>
+
+<!-- 1 -->
+<nav id="menubar">
+	<ul>
+		<li><a href="#">home</a></li>
+		<li><a href="#">Login</a></li>
+		<li><a href="#">join</a></li>
+		<li><a href="#">Board</a></li>
+		<li><a href="#">F.A.Q</a></li>
+	</ul>
+</nav>
+
+<!-- 2 -->
+<h3>2.테이블 만들기</h3>
+<hr/>
+
+<table>
+	<thead>
+		<tr>
+			<th>번호</th>
+			<th>이름</th>
+			<th>학과</th>
+			<th>학번</th>
+			<th>전화번호</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>1</td>
+			<td>남궁성</td>
+			<td>컴퓨터공학</td>
+			<td>20230215</td>
+			<td>010-1234-5678</td>
+		</tr>		
+	</tbody>
+	<tfoot>
+		<tr>
+			<th>개인정보</th>
+			<th>인적사항</th>
+		</tr>
+		
+	</tfoot>
+	
+</table>
+</body>
+</html>
+
+<!-- 
+1. nav, ul, a를 활용해 수평 메뉴바를 만들어봄 메뉴 항목은 
+   (home, Login, join, Board, F.A.Q)로 만듬
+2. 테이블을 생성 (번호, 이름, 학과, 학번, 전화번호)를 컬럼으로 사용
+   단일선의 테두리 사용 테이블 크기는 전체화면의 30% 사용 
+   각 칸의 높이는 20px, 각 칸의 너비는 100px
+   각 칸에 padding 적용, 
+   각 줄 중(tbody)에서 홀수중에는 pink색 짝수줄에는 aliceblue적용
+   thead나 tfoot의 줄에는 다른색을 사용, 
+   각 줄에 hover효과 주기
+3. 회원가입 web form을 생성 (Id, Email, 이름, 비밀번호, 전화번호, 주소, 자기소개 항목을 갖는 폼
+   label 사용, 입력시 글자색은 blue로 하고, focus할때 글자크기 1.2배로 입력창의 배경색은 pink로
+   등 최대한 배운 css를 적용
+   입력요소(콘트롤)의 크기를 100%로 해서 만들어 보자
+-->
